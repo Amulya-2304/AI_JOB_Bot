@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Dashboard</title>
+</head>
+<body>
+  <h1>Welcome to Your Job Dashboard</h1>
+
+  <form method="GET" action="/search_jobs">
+    <label for="keyword">Search by Keyword:</label><br>
+    <input type="text" id="keyword" name="keyword" placeholder="e.g. Python, AI" required><br><br>
+
+    <label for="location">Location:</label><br>
+    <input type="text" id="location" name="location" placeholder="e.g. Berlin, Remote"><br><br>
+
+    <label>Job Type:</label><br>
+    <input type="checkbox" name="job_type" value="full-time"> Full-time<br>
+    <input type="checkbox" name="job_type" value="part-time"> Part-time<br>
+    <input type="checkbox" name="job_type" value="remote"> Remote<br>
+    <input type="checkbox" name="job_type" value="wfh"> Work From Home<br><br>
+
+    <label>Job Seeking Status:</label><br>
+    <input type="radio" name="status" value="active" checked> I am actively looking<br>
+    <input type="radio" name="status" value="passive"> I am not actively looking<br><br>
+
+    <button type="submit">Search Jobs</button>
+  </form>
+</body>
+</html>
